@@ -1,0 +1,21 @@
+VoIP:
+
+ROUTER - 2811
+
+ip dhcp pool <pool name>
+default-router <def gateway>
+option 150 or 66 ip <def gateway>
+network <network add> <subnet mask>
+
+global config
+telephony-service
+max-dn <number of telephones>
+max-ephones <number of telephones>
+ip source-address <def gateway> port 2000
+auto assign 1 to <how many telephones>
+ephone-dn <number of phone>
+number <number>
+
+switch
+switchport access vlan <ID>
+switchport voice vlan <ID>

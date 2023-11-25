@@ -1,0 +1,12 @@
+TO MAKE IT ACT LIKE A ROUTER:
+int <port>
+no switchport
+ip add <default gateway> <subnet mask>
+
+TO MAKE IT DO ROUTER-ON-A-STICK
+you trunk the switch to multilayer switch
+int <port>
+switchport trunk encapsulation dot1q (FOR 3560-24PS MLS ONLY)
+switchport mode trunk (FOR 3650-24PS MLS ONLY)
+int vlan ID
+ip add <default gateway> <subnet mask>

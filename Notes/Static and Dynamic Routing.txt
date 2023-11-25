@@ -1,0 +1,16 @@
+STATIC ROUTING:
+
+IP ROUTE - ip route DNA SM NHA
+
+STATIC DEFAULT ROUTE - ip route 0.0.0.0 0.0.0.0 NHA
+
+
+DYNAMIC ROUTING:
+
+EIRGP - router eirgp <num>
+	network <NA>
+
+OSPF - router ospf <num>
+	network <NA> <wildcard> area <num>
+
+wildcard = 255.255.255.255 - SUBNET MASK USED IN THAT NA
