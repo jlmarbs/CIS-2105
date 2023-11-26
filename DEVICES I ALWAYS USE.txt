@@ -1,0 +1,17 @@
+DEVICES I ALWAYS USE IN PACKET TRACER:
+
+ROUTER:
+- Router PT-Empty
+  MODULES:
+  PT-ROUTER-NM-1S
+  PT-ROUTER-NM-1CFE
+  PT-ROUTER-NM-1CGE (only if router to AP-PT)
+- 2811 (for telephony-service)
+
+SWITCH:
+- 2960
+- 3560 24PS
+- 3650 24PS
+
+WIRELESS DEVICES:
+- AP-PT
