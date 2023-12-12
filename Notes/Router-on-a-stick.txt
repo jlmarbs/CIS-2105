@@ -1,0 +1,9 @@
+COMMANDS FOR ROUTER-ON-A-STICK
+
+NOTE: make sure the middle switch port to the router is also trunked.
+
+int <port>
+no shut
+int fa<port>.<VLAN ID> example: int fa0/1.60
+encapsulation dot1Q <VLAN ID>
+ip add <def gateway> <subnet mask>
