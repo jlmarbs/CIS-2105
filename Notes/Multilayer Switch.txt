@@ -5,6 +5,7 @@ ip add <default gateway> <subnet mask>
 
 TO MAKE IT DO ROUTER-ON-A-STICK
 you trunk the switch to multilayer switch
+(also do `ip routing`)
 int <port>
 switchport trunk encapsulation dot1q (FOR 3560-24PS MLS ONLY)
 switchport mode trunk (FOR 3650-24PS MLS ONLY)
